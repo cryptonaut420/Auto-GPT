@@ -53,3 +53,8 @@ pytest-integration
 pytest-mock
 vcrpy
 pytest-recording
+
+#custom additions
+shutil
+tarfile
+zipfile
