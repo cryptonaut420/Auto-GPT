@@ -8,11 +8,11 @@ from autogpt.logs import logger
 
 
 @command(
-    "task_complete",
-    "Task Complete (Shutdown)",
+    "shutdown_autogpt",
+    "All Tasks Complete / Nothing Left to Do, No More Reason to Live (Shutdown)",
     '"reason": "<reason>"',
 )
-def task_complete(reason: str) -> NoReturn:
+def shutdown_autogpt(reason: str) -> NoReturn:
     """
     A function that takes in a string and exits the program
 
