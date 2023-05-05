@@ -55,6 +55,8 @@ vcrpy
 pytest-recording
 
 #custom additions
-shutil
-tarfile
-zipfile
+asana
+shutils
+xtarfile
+zipfile2
+PyGithub
