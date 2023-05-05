@@ -6,7 +6,7 @@
   - analyze_code
   - improve_code
   - write_tests
-  - read_audio_from_file
+  - read_audio_from_file (env disabled)
   - execute_python_file
   - execute_shell (env disabled)
   - execute_shell_popen (env disabled)
@@ -49,17 +49,20 @@
 - github pull request
 
 ##Asana Plugin
-- _asana_tasks
-- _comment_asana_task
-- _get_asana_task
-- _complete_asana_task
+- asana_tasks
+- comment_asana_task
+- get_asana_task
+- complete_asana_task
 
 ##Discord Plugin
-- _ask_on_discord
-- _post_on_discord
-- _check_discord_channel
+- ask_on_discord
+- post_on_discord
+- check_discord_channel
 
 ##Wikipedia Plugin
   - wikipedia_search
 
 ##Misc Functions Plugin
+  - Wait
+  - Sleep
+  - do_nothing
