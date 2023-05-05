@@ -58,6 +58,28 @@ def git_add(repo_path: str, file_path: str) -> str:
         return f"Error: {str(e)}"
 
 @command(
+    "git_remove",
+    "Remove a file from the git staging area",
+    '"repo_path": "<repo_path>", "file_path": "<file_path>"',
+    CFG.github_username and CFG.github_api_key,
+    "Configure github_username and github_api_key.",
+)
+def git_remove(repo_path: str, file_path: str) -> str:
+    """Remove a file from the git staging area.
+    Args:
+        repo_path (str): The path to the repository.
+        file_path (str): The path to the file to remove.
+    Returns:
+        str: The result of the remove operation.
+    """
+    try:
+        repo = Repo(repo_path)
+        repo.index.remove([file_path], cached=True)
+        return f"Removed {file_path} from the staging area"
+    except Exception as e:
+        return f"Error: {str(e)}"
+
+@command(
     "git_commit",
     "Commit changes to the repository",
     '"repo_path": "<repo_path>", "message": "<message>"',
